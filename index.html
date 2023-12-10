@@ -1,123 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pemrograman Web</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/footer.css">
-	<link rel="stylesheet" href="./assets/css/main.css">
-	<link rel="icon" href="./assets/img/profile.jpg">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="portofolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>My Web CV</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2673372043";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
-
-<body style="background-color: #394149;">
-	<header>
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="/">
-							<img 
-								src="./assets/img/profile.jpg"
-								class="rounded-circle"
-								style="max-height: 40px; max-width: 100%;"
-							/>
-						</a>
-					</li>
-
-				</ul>
-				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-							Pertemuan
-						</a>
-						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="#">Pertemuan 1</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<main class="container mt-4 mb-5">
-		<div class="mt-0 mb-0 card-custom">
-			<h1>Pemrograman Web</h1>
-			<p>Web ini adalah bukti saya belajar html dari awal. dan juga sebagai bukti <br>Mengerjakan tugas dari Dosen
-				mata kuliah <b>Pemrograman Web</b>.</p>
-		</div>
-		<div class="mt-4 row" style="color: rgba(255,255,255,.5);">
-			<div class="col-12 col-md">
-				<h5>Berikut hal yang pernah dibuat/sedang dipelajari</h5>
-			</div>
-			<div class="col-12 col-md text-right">
-				<a href="https://github.com/shirokun20/" style="color: #eeeeee;text-decoration: none;">Lihat lebih banyak</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg col-12 mt-2">
-				<div class="card">
-					<div class="card-body mx-auto text-center">
-						<b>COVID 19 Flutter Sample</b>
-						<div class="mt-2">
-							<img src="https://raw.githubusercontent.com/shirokun20/Covid-19-Flutter-UI/master/covid_19.png"
-								class="rounded" style="max-height: 200px; max-width: 100%;" />
-						</div>
-						<div class="mt-5">
-							<a href="https://github.com/shirokun20/Covid-19-Flutter-UI"
-								class="btn btn-primary btn-block">Klik Disini</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg col-12 mt-2">
-				<div class="card">
-					<div class="card-body mx-auto text-center">
-						<b>Jasa Nge Print React Native</b>
-						<div class="mt-2">
-							<img src="https://raw.githubusercontent.com/shirokun20/jasaPrintKu/master/sampleImage/sample_output.png"
-								class="rounded" style="max-height: 200px; max-width: 100%;" />
-						</div>
-						<div class="mt-5">
-							<a href="https://github.com/shirokun20/jasaPrintKu" class="btn btn-primary btn-block">Klik
-								Disini</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg col-12 mt-2">
-				<div class="card">
-					<div class="card-body mx-auto text-center">
-						<b>Tokopedia Clone Flutter</b>
-						<div class="mt-2">
-							<img src="https://raw.githubusercontent.com/shirokun20/Tokopedia-UI-Clone-With-Flutter/master/image/home.jpg"
-								class="rounded" style="max-height: 200px; max-width: 100%;" />
-						</div>
-						<div class="mt-5">
-							<a href="https://github.com/shirokun20/Tokopedia-UI-Clone-With-Flutter"
-								class="btn btn-primary btn-block">Klik Disini</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<div style="margin-bottom: 100px;" />
-	<div>
-		<footer class="footer">
-			<div class="container">
-				<span>Dibuat oleh <b>shirokun</b>.</span>
-			</div>
-		</footer>
-	</div>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
