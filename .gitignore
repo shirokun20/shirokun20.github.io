@@ -25,3 +25,4 @@ dist-ssr
 
 # Old Flutter app backup
 old_flutter_app
+*.png

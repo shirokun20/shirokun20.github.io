@@ -1,16 +1,41 @@
 @import "tailwindcss";
 
+/* Custom dark variant for class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* CSS Variables for theming */
+:root {
+  --bg-primary: #faf9f6;
+  --bg-secondary: #f5f5dc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  color-scheme: light;
+}
+
+:root.dark {
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  color-scheme: dark;
+}
+
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply antialiased;
-  }
-
-  /* Enable dark mode support */
-  html[data-theme="dark"] {
-    color-scheme: dark;
-  }
-
-  html[data-theme="light"] {
-    color-scheme: light;
+    @apply antialiased transition-colors duration-300;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
   }
 }
