@@ -1,4 +1,4 @@
-import { ThemeProvider } from './contexts/ThemeContext';
+import { ThemeProvider } from './contexts/ThemeProvider';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
