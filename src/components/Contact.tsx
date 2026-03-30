@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
             </h3>
 
             <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg max-w-2xl mx-auto">
-              If you appreciate my work and would like to support me, you can buy me a coffee using QRIS or support me on Patreon!
+              If you appreciate my work and would like to support me, you can buy me a coffee using QRIS, support me on Patreon, or send a tip through Trakteer!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -100,6 +100,23 @@ const Contact: React.FC = () => {
                 >
                   <Heart className="w-5 h-5" />
                   <span>Support on Patreon</span>
+                </a>
+              </div>
+
+              {/* Trakteer Section */}
+              <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-amber-100 dark:border-gray-700 flex flex-col justify-center">
+                <h4 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">Support via Trakteer</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-6">
+                  Send one-time tips in IDR through Trakteer to keep the projects going.
+                </p>
+                <a
+                  href="https://trakteer.id/shirokun20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full px-6 py-4 bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 text-white rounded-xl transition-all duration-300 font-medium shadow-lg hover:shadow-xl backdrop-blur-sm transform hover:-translate-y-1"
+                >
+                  <Coffee className="w-5 h-5" />
+                  <span>Support on Trakteer</span>
                 </a>
               </div>
             </div>
